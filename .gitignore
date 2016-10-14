@@ -1,0 +1,8 @@
+# Ignore file extensions
+*.aux
+*.log
+*.nav
+*.out
+*.pdf
+*.snm
+*.toc
