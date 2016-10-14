@@ -110,6 +110,19 @@ Initialised empty Git repository in /your/working/directory/wrk_dir/.git/
   % Workflow
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \section{Workflow}
+  \begin{frame}[fragile=singleslide]{Fetching}
+    Check for changes from remote repositories
+    \begin{lstlisting}[language=bash]
+$ git fetch
+fatal: No remote repository specified.  Please, specify either a URL or a
+remote name from which new revisions should be fetched.
+    \end{lstlisting}
+    This means we must setup a remote, using the following syntax:
+    \begin{lstlisting}[language=bash]
+$ git remote add git@github.com:<username>/<repo>.git
+    \end{lstlisting}
+    More on this later
+  \end{frame}
   \begin{frame}{Adding Files}
     \textbf{TODO:} Write this section.
   \end{frame}
