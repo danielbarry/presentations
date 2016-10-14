@@ -1,0 +1,96 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% presentation.tex
+%
+% This presentation has been designed to install the basics of Git into
+% Computer Science students at the University of Hertfordshire.
+%
+% @author B[]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{beamer}
+
+\usepackage{color}
+\usepackage{listings}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+
+\usetheme{metropolis}
+
+\definecolor{Blue}{rgb}{0.0, 0.0, 0.8}
+\definecolor{DarkGreen}{rgb}{0.0, 0.5, 0.0}
+\definecolor{DarkGray}{rgb}{0.5, 0.5, 0.5}
+\definecolor{Gray}{rgb}{0.8, 0.8, 0.8}
+\definecolor{Orange}{rgb}{0.8, 0.5, 0.0}
+\definecolor{White}{rgb}{1.0, 1.0, 1.0}
+
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  commentstyle=\color{DarkGreen},
+  escapeinside={\%*}{*)},
+  extendedchars=true,
+  frameshape={RYR}{Y}{Y}{RYR},
+  keepspaces=true,
+  keywordstyle=\color{Blue},
+  numbers=left,
+  numbersep=6pt,
+  numberstyle=\tiny\color{DarkGray},
+  rulecolor=\color{Gray},
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  stepnumber=1,
+  stringstyle=\color{Orange},
+  tabsize=2
+}
+
+\title{Git Basics}
+\date{November, 2016}
+\author{Daniel Barry}
+\institute{University of Hertfordshire}
+
+\begin{document}
+  \maketitle
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Introduction
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \section{Introduction}
+  \begin{frame}{What is Git?}
+    \textbf{TODO:} Write this section.
+  \end{frame}
+  \begin{frame}{Why use Git?}
+    \textbf{TODO:} Write this section.
+  \end{frame}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Getting Started
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \section{Getting Started}
+  \begin{frame}{Requirements}
+    \begin{itemize}
+      \item \texttt{git} - The repository program
+      \item \texttt{git-gui} - Graphical representation
+    \end{itemize}
+  \end{frame}
+  \begin{frame}[fragile=singleslide]{Setup an Environment}
+    Create the working directory and navigate to it
+    \begin{lstlisting}[language=bash]
+$ mkdir wrk_dir
+$ cd wrk_dir
+    \end{lstlisting}
+    Initialise the repository in the working directory
+    \begin{lstlisting}[language=bash]
+$ git init
+    \end{lstlisting}
+  \end{frame}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Conclusion
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \section{Conclusion}
+  \begin{frame}{About Presentation}
+    \begin{itemize}
+      \item Presentation - \url{http://www.latex-project.org/}
+      \item Theme - \url{https://github.com/matze/mtheme}
+    \end{itemize}
+  \end{frame}
+\end{document}
