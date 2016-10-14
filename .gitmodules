@@ -1,0 +1,3 @@
+[submodule "git-basic/mtheme"]
+	path = git-basic/mtheme
+	url = git@github.com:matze/mtheme.git
