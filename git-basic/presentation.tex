@@ -116,7 +116,6 @@ $ cd wrk_dir
   \begin{frame}[fragile=singleslide]{Status}
     Find out the state of the repository
     \lstinputlisting{out/test4.txt}
-    Here we are told:
     \begin{itemize}
       \item We are on our master branch
       \item Our latest commit
@@ -148,12 +147,37 @@ $ cd wrk_dir
     And then we push
     \lstinputlisting{out/test11.txt}
     After this web can simply use \texttt{git push}
+    Now we check our repository
+    \lstinputlisting{out/test12.txt}
   \end{frame}
-  \begin{frame}{Stashing}
-    \textbf{TODO:} Write this section.
+  \begin{frame}[fragile=singleslide]{Stashing}
+    We can create changes and check them
+    \lstinputlisting{out/test14.txt}
   \end{frame}
-  \begin{frame}{Pulling}
-    \textbf{TODO:} Write this section.
+  \begin{frame}[fragile=singleslide]
+    Stash our changes
+    \lstinputlisting{out/test15.txt}
+    Check the status of the repository
+    \lstinputlisting{out/test16.txt}
+  \end{frame}
+  \begin{frame}[fragile=singleslide]
+    Pop our changes back
+    \lstinputlisting{out/test17.txt}
+    We are told the repository status
+  \end{frame}
+  \begin{frame}[fragile=singleslide]{Pulling}
+    Somebody on our team has pushed a change we want
+    \lstinputlisting{out/test18.txt}
+    Stash our unstaged changes
+    \lstinputlisting{out/test19.txt}
+  \end{frame}
+  \begin{frame}[fragile=singleslide]
+    Pull in the changes
+    \lstinputlisting{out/test20.txt}
+  \end{frame}
+  \begin{frame}[fragile=singleslide]
+    And pop our stashed changes back
+    \lstinputlisting{out/test21.txt}
   \end{frame}
   \begin{frame}{Feature Branch}
     \textbf{TODO:} Write this section.
