@@ -111,14 +111,11 @@ $ cd wrk_dir
     Check for changes from remote repositories
     \lstinputlisting{out/test2.txt}
     This means we must setup a remote, using the following syntax:
-    \begin{lstlisting}[language=bash]
-$ git remote add git@github.com:<username>/<repo>.git
-    \end{lstlisting}
-    More on this later
+    \lstinputlisting{out/test3.txt}
   \end{frame}
   \begin{frame}[fragile=singleslide]{Status}
     Find out the state of the repository
-    \lstinputlisting{out/test3.txt}
+    \lstinputlisting{out/test4.txt}
     Here we are told:
     \begin{itemize}
       \item We are on our master branch
@@ -127,14 +124,30 @@ $ git remote add git@github.com:<username>/<repo>.git
       \item How to commit if we need to
     \end{itemize}
   \end{frame}
-  \begin{frame}{Adding Files}
-    \textbf{TODO:} Write this section.
+  \begin{frame}[fragile=singleslide]{Adding Files}
+    Create simple read me file
+    \lstinputlisting{out/test5.txt}
+    \lstinputlisting{out/test6.txt}
+  \end{frame}
+  \begin{frame}[fragile=singleslide]
+    Add the file to the commit
+    \lstinputlisting{out/test7.txt}
+    \lstinputlisting{out/test8.txt}
   \end{frame}
   \begin{frame}{Visually Adding Files}
-    \textbf{TODO:} Write this section.
+    \centering
+    \includegraphics[scale=0.4,keepaspectratio]{git-gui.png}
   \end{frame}
-  \begin{frame}{Commiting \& Pushing}
-    \textbf{TODO:} Write this section.
+  \begin{frame}[fragile=singleslide]{Commiting \& Pushing}
+    Next we commit our changes
+    \lstinputlisting{out/test9.txt}
+    We fetch to make sure nothing happened in origin
+    \lstinputlisting{out/test10.txt}
+  \end{frame}
+  \begin{frame}[fragile=singleslide]
+    And then we push
+    \lstinputlisting{out/test11.txt}
+    After this web can simply use \texttt{git push}
   \end{frame}
   \begin{frame}{Stashing}
     \textbf{TODO:} Write this section.
