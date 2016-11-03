@@ -110,7 +110,7 @@ $ cd wrk_dir
   \begin{frame}[fragile=singleslide]{Fetching}
     Check for changes from remote repositories
     \lstinputlisting{out/test2.txt}
-    This means we must setup a remote, using the following syntax:
+    This means we must setup a remote
     \lstinputlisting{out/test3.txt}
   \end{frame}
   \begin{frame}[fragile=singleslide]{Status}
@@ -179,8 +179,28 @@ $ cd wrk_dir
     And pop our stashed changes back
     \lstinputlisting{out/test21.txt}
   \end{frame}
-  \begin{frame}{Feature Branch}
-    \textbf{TODO:} Write this section.
+  \begin{frame}[fragile=singleslide]{Feature Branch}
+    New features developed on a separate branch
+    \lstinputlisting{out/test22.txt}
+    Check which branch we are on
+    \lstinputlisting{out/test23.txt}
+  \end{frame}
+  \begin{frame}[fragile=singleslide]
+    Create change on branch and commit it
+    \lstinputlisting{out/test24.txt}
+    Push change
+    \lstinputlisting{out/test25.txt}
+  \end{frame}
+  \begin{frame}[fragile=singleslide]{Merge Branch}
+    Checkout the master branch
+    \lstinputlisting{out/test26.txt}
+    Merge the branch with master
+    \lstinputlisting{out/test27.txt}
+  \end{frame}
+  \begin{frame}[fragile=singleslide]
+    Now check the status
+    \lstinputlisting{out/test28.txt}
+    Commits from the branch are waiting to be pushed
   \end{frame}
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % Something Went Wrong

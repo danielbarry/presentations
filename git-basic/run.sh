@@ -196,6 +196,62 @@ function test21 {
   run_cmd "git stash pop"
 }
 
+# test22()
+#
+# Runs the test.
+function test22 {
+  run_cmd "git checkout -b feature/new-branch"
+}
+
+# test23()
+#
+# Runs the test.
+function test23 {
+  run_cmd "git branch"
+}
+
+# test24()
+#
+# Runs the test.
+function test24 {
+  run_cmd "echo -e 'extra data' > feature.txt; git add feature.txt; git commit -m 'New commit'"
+}
+
+# prep24()
+#
+# Prepares environment.
+function prep24 {
+  run_cmd 'git push origin --delete feature/new-branch'
+}
+
+# test25()
+#
+# Runs the test.
+function test25 {
+  run_cmd "git push origin feature/new-branch"
+}
+
+# test26()
+#
+# Runs the test.
+function test26 {
+  run_cmd "git checkout master"
+}
+
+# test27()
+#
+# Runs the test.
+function test27 {
+  run_cmd "git merge feature/new-branch"
+}
+
+# test28()
+#
+# Runs the test.
+function test28 {
+  run_cmd "git status"
+}
+
 # main()
 #
 # The main directory to run the various tests.
@@ -227,6 +283,15 @@ function main {
   test19 > ../out/test19.txt 2>&1
   test20 > ../out/test20.txt 2>&1
   test21 > ../out/test21.txt 2>&1
+  test22 > ../out/test22.txt 2>&1
+  test23 > ../out/test23.txt 2>&1
+  test24 > ../out/test24.txt 2>&1
+  # NOTE: Here we sneakily delete our old branch here.
+  prep24 > ../out/prep24.txt 2>&1
+  test25 > ../out/test25.txt 2>&1
+  test26 > ../out/test26.txt 2>&1
+  test27 > ../out/test27.txt 2>&1
+  test28 > ../out/test28.txt 2>&1
   # Compile and view presentation
   cd ..
   rm presentation.aux
