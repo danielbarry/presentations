@@ -252,6 +252,41 @@ function test28 {
   run_cmd "git status"
 }
 
+# test29()
+#
+# Runs the test.
+function test29 {
+  run_cmd "git status -s"
+}
+
+# test30()
+#
+# Runs the test.
+function test30 {
+  run_cmd "git checkout readme.md"
+}
+
+# test31()
+#
+# Runs the test.
+function test31 {
+  run_cmd "git log -n 1"
+}
+
+# test32()
+#
+# Runs the test.
+function test32 {
+  run_cmd "git reset --soft HEAD^"
+}
+
+# test33()
+#
+# Runs the test.
+function test33 {
+  run_cmd "git log -n 1"
+}
+
 # main()
 #
 # The main directory to run the various tests.
@@ -292,6 +327,11 @@ function main {
   test26 > ../out/test26.txt 2>&1
   test27 > ../out/test27.txt 2>&1
   test28 > ../out/test28.txt 2>&1
+  test29 > ../out/test29.txt 2>&1
+  test30 > ../out/test30.txt 2>&1
+  test31 > ../out/test31.txt 2>&1
+  test32 > ../out/test32.txt 2>&1
+  test33 > ../out/test33.txt 2>&1
   # Compile and view presentation
   cd ..
   rm presentation.aux
