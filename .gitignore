@@ -1,3 +1,6 @@
+# Ignore directories
+git-basic/wrk_dir/*
+
 # Ignore file extensions
 *.aux
 *.log
