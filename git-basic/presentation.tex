@@ -250,7 +250,30 @@ $ cd wrk_dir
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \section{Advanced}
   \begin{frame}{Re-Writing History}
-    \textbf{TODO:} Write this section.
+    \textbf{WARNING:} This is dangerous
+    \\
+    Reasons not to do this:
+    \begin{itemize}
+      \item Could permanently remove data
+      \item Will cause problems for team mates
+      \item Generally no way to undo this
+    \end{itemize}
+    Reasons to do this:
+    \begin{itemize}
+      \item Something \textbf{REALLY} bad happened
+      \item ``You're a Git Wizard Harry"
+    \end{itemize}
+  \end{frame}
+  \begin{frame}{Re-Write What?}
+    \begin{itemize}
+      \item Amend previous commit \texttt{git commit --amend}
+      \item Amend many commits \texttt{git rebase -i HEAD~N}
+      \item Squashing commits (Use interactive rebase)
+      \item Split commits (Use interactive rebase)
+      \item Filter-Branch (Scripted re-writing) \textbf{ULTRA DANGEROUS}
+    \end{itemize}
+    Further reading:
+    \url{https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History}
   \end{frame}
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % Conclusion
