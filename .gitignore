@@ -3,6 +3,9 @@ git-basic/wrk_dir/*
 
 # Ignore file extensions
 *.aux
+*.class
+*.html
+*.jar
 *.log
 *.nav
 *.out
