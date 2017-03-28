@@ -1,0 +1,25 @@
+body{
+  background: #FFF;
+  color: #222;
+}
+code{
+  background: #DDD;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 4px;
+}
+h1,h2,h3,h4,h5,h6{
+  background: #222;
+  border-radius: 4px;
+  color: #BBB;
+  padding: 4px;
+}
+img{
+  height: auto;
+  width: 100%;
+}
+pre{
+  border: 0px;
+  border-left: 8px solid #444;
+  display: block;
+}
