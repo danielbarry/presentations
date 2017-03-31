@@ -1,5 +1,3 @@
-![Title Image](title.png)
-
 **NOTE:** This book is not yet complete, incomplete sections are marked with "TODO".
 
 # Introduction
