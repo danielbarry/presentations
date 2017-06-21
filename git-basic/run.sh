@@ -287,6 +287,13 @@ function test33 {
   run_cmd "git log -n 1"
 }
 
+# test34()
+#
+# Runs the test.
+function test34 {
+  run_cmd "git status"
+}
+
 # main()
 #
 # The main directory to run the various tests.
@@ -332,6 +339,7 @@ function main {
   test31 > ../out/test31.txt 2>&1
   test32 > ../out/test32.txt 2>&1
   test33 > ../out/test33.txt 2>&1
+  test34 > ../out/test34.txt 2>&1
   # Compile and view presentation
   cd ..
   rm presentation.aux
