@@ -277,7 +277,7 @@ function test31 {
 #
 # Runs the test.
 function test32 {
-  run_cmd "git reset --soft HEAD^"
+  run_cmd "git reset --mixed HEAD^"
 }
 
 # test33()
