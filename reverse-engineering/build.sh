@@ -1,5 +1,5 @@
 # Build the documents
-pandoc -t beamer -o talk.tex talk.md
+pandoc -t beamer --listings -o talk.tex talk.md
 pdflatex main.tex
 pdflatex main.tex
 # Clean-up after ourselves
