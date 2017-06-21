@@ -14,3 +14,4 @@ git-basic/wrk_dir/*
 *.swp
 *.toc
 *.txt
+*.vrb
