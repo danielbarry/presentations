@@ -1,3 +1,5 @@
+![Netizens](logo.png)
+
 # What Is?
 
 **TODO:** Discuss this.
