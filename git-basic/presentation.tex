@@ -65,9 +65,8 @@
       \item Work in teams easily
       \item Access to large open source projects
       \item Employers prefer you know how repositories work
-      \item A perfect backup of your efforts
     \end{itemize}
-    This presentation was built in one!
+    This presentation was built in a Git repository!
   \end{frame}
   \begin{frame}{Quick Git History}
     \begin{itemize}
@@ -79,17 +78,17 @@
       \item \emph{Git} for Linux Kernel (2005 - now)
     \end{itemize}
     More:
-    \url{https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git}
+    \url{https://en.wikipedia.org/wiki/Git}
   \end{frame}
   \begin{frame}{What is Git?}
     \begin{itemize}
-      \item Designed to replicate BitKeeper
+      \item Inspired by BitKeeper
       \item Version control system
       \item Fully distributed
       \item Merges, even three-way merges
       \item Robust against corruption
     \end{itemize}
-    Git was named after Linux...
+    Git was named after Linus...
   \end{frame}
   \begin{frame}{Branches?}
     \centering
@@ -98,8 +97,10 @@
   \begin{frame}{What is a Commit?}
     \begin{itemize}
       \item A commit is a series of changes to files
+      \item Contains meta information (who, when, etc)
       \item Usually all the changes are related
-      \item A small ($ \leqslant $ 80 character) message describing them
+      \item A small (typically $ \leqslant $ 80 character) message describing
+        them
     \end{itemize}
   \end{frame}
   \begin{frame}{What is a Change?}
@@ -136,7 +137,7 @@ $ cd wrk_dir
     \lstinputlisting{out/test3.txt}
   \end{frame}
   \begin{frame}[fragile=singleslide]{Status}
-    Find out the state of the repository
+    Find out the state of the working tree
     \lstinputlisting{out/test4.txt}
     \begin{itemize}
       \item We are on our master branch
@@ -162,14 +163,13 @@ $ cd wrk_dir
   \begin{frame}[fragile=singleslide]{Commiting \& Pushing}
     Next we commit our changes
     \lstinputlisting{out/test9.txt}
-    We fetch to make sure nothing happened in origin
+    We fetch to check nothing happened in origin
     \lstinputlisting{out/test10.txt}
   \end{frame}
   \begin{frame}[fragile=singleslide]
     And then we push
     \lstinputlisting{out/test11.txt}
-    After this web can simply use \texttt{git push}
-    Now we check our repository
+    Now we check our working tree
     \lstinputlisting{out/test12.txt}
   \end{frame}
   \begin{frame}[fragile=singleslide]{Stashing}
@@ -194,7 +194,7 @@ $ cd wrk_dir
     \lstinputlisting{out/test19.txt}
   \end{frame}
   \begin{frame}[fragile=singleslide]
-    Pull in the changes
+    Pull in the changes (auto-rebase)
     \lstinputlisting{out/test20.txt}
   \end{frame}
   \begin{frame}[fragile=singleslide]
@@ -245,22 +245,27 @@ $ cd wrk_dir
     \lstinputlisting{out/test33.txt}
     ``Bang, and the dirt is gone!"
   \end{frame}
+  \begin{frame}[fragile=singleslide]
+    Actually, it is still staged
+    \lstinputlisting{out/test34.txt}
+    So we can do something with this
+  \end{frame}
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % Advanced
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \section{Advanced}
   \begin{frame}{Re-Writing History}
-    \textbf{WARNING:} This is dangerous
+    \textbf{WARNING:} This is dangerous (but powerful ;) )
     \\
     Reasons not to do this:
     \begin{itemize}
-      \item Could permanently remove data
-      \item Will cause problems for team mates
-      \item Generally no way to undo this
+      \item Could make data hard to recover
+      \item Will could problems for team mates
+      \item More difficult to undo these changes (but not impossible)
     \end{itemize}
     Reasons to do this:
     \begin{itemize}
-      \item Something \textbf{REALLY} bad happened
+      \item Something bad happened
       \item ``You're a Git Wizard Harry"
     \end{itemize}
   \end{frame}
@@ -270,7 +275,7 @@ $ cd wrk_dir
       \item Amend many commits \texttt{git rebase -i HEAD~N}
       \item Squashing commits (Use interactive rebase)
       \item Split commits (Use interactive rebase)
-      \item Filter-Branch (Scripted re-writing) \textbf{ULTRA DANGEROUS}
+      \item Filter-Branch (Scripted re-writing)
     \end{itemize}
     Further reading:
     \url{https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History}
