@@ -1,8 +1,24 @@
 \documentclass[serif]{beamer}
 
 \usepackage{enumitem}
+\usepackage{listings}
 
 \input{"theme.tex"}
+
+\lstset{
+  backgroundcolor=\color[RGB]{224,224,224},
+  basicstyle=\ttfamily,
+  breakatwhitespace=true,
+  breaklines=true,
+  escapeinside={\%*}{*)},
+  showspaces=false,
+  tabsize=2
+}
+
+\providecommand{\tightlist}{
+  \setlength{\itemsep}{0pt}
+  \setlength{\parskip}{0pt}
+}
 
 \newcommand{\nl}{\\[2mm]}
 
