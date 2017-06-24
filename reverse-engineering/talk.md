@@ -2,7 +2,15 @@
 
 # What Is?
 
-**TODO:** Definition of reverse engineering.
+"Reverse engineering, also called back engineering, is the processes of
+extracting knowledge or design information from anything man-made and
+reproducing it or reproducing anything based on the extracted information." {1}
+
+* `>` Extract knowledge
+* `>` Extract design
+* `>` Use that information
+
+{1} [Wikipedia](https://en.wikipedia.org/wiki/Reverse_engineering)
 
 # Why?
 
